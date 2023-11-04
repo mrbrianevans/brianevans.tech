@@ -2,22 +2,80 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="/src/styles/index.scss"/>
+    <link rel="stylesheet" type="text/css" href="/src/styles/theme.scss"/>
+    <link rel="stylesheet" type="text/css" href="/src/styles/layout.scss"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brian Evans</title>
   </head>
 
   <body>
 
-  <div id="app">
-    <h1>Under development</h1>
-    <p>I am working on a new personal website. Check back in a few days for updates.</p>
-    <p>In the meantime, if you wish to see coding work that I've done, see my GitHub: <a href="https://github.com/mrbrianevans">mrbrianevans</a> or contact me on LinkedIn: <a href="https://www.linkedin.com/in/brianevanstech/">Brian Evans</a>.</p>
+  <main>
+    <article class="grid">
 
-    <br/>
-    <p>My previous personal website was built with PHP, but this new one will be built using Typescript.</p>
-  </div>
+      <div id="page-title">
+        <header><h1>Brian Evans</h1></header>
+        <p>Welcome to my website. I'm a software developer focused on web development with JavaScript frontend and backend.</p>
+        <p>Take a look at some of my projects listed here or
+          view some source code on my <a href="https://github.com/mrbrianevans">GitHub profile</a>.</p>
+      </div>
 
-    <script type="module" src="/src/main.ts"></script>
+      <div id="profile">
+        <img src="/me.png">
+      </div>
+
+      <a href="https://companies.stream" class="card-outer">
+        <div class="card-inner" >
+          <h3>Companies Stream</h3>
+          <p>Realtime streaming tool for viewing updates to the Companies House register.</p>
+          <span class="orange tag">companies house</span>
+          <span class="orange tag">redis</span>
+          <span class="orange tag">docker</span>
+          <span class="orange tag">javascript</span>
+        </div>
+      </a>
+
+      <a href="https://www.npmjs.com/package/do-functions" class="card-outer">
+        <div class="card-inner" >
+          <h3>Digital Ocean Functions</h3>
+          <p>npm package to simplify deployment of serverless functions to Digital Ocean.</p>
+          <span class="orange tag">serverless</span>
+          <span class="orange tag">javascript</span>
+          <span class="orange tag">esbuild</span>
+        </div>
+      </a>
+
+      <a href="https://filingdeadlines.co.uk" class="card-outer">
+        <div class="card-inner" >
+          <h3>Filing Deadlines</h3>
+          <p>SaaS dashboard for accountancy practices, pulling data from Companies House.</p>
+          <span class="orange tag">companies house</span>
+          <span class="orange tag">redis</span>
+          <span class="orange tag">docker</span>
+          <span class="orange tag">javascript</span>
+        </div>
+      </a>
+
+      <a href="https://mrbrianevans.github.io/find-directors/" class="card-outer">
+        <div class="card-inner" >
+          <h3>Find directors</h3>
+          <p>Simple web app for viewing the directors of any company in the UK.</p>
+          <span class="orange tag">companies house</span>
+          <span class="orange tag">javascript</span>
+          <span class="orange tag">serverless</span>
+        </div>
+      </a>
+
+    </article>
+
+    <footer>
+      <a href="https://github.com/mrbrianevans">github</a>
+      | <a href="https://www.linkedin.com/in/brianevanstech/">linked in</a>
+<!--      | <a href="contact">contact</a>-->
+<!--      | <a href="about">about</a> -->
+    </footer>
+  </main>
   </body>
 </html>
