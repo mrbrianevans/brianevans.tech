@@ -33,10 +33,10 @@ body{
   }
 }
 #page-title{
-  background: VAR(--PRIMARY-GRADIENT);
   padding: 50px;
   user-select: none;
   border-radius: 1rem;
+  box-shadow: none;
 }
 #page-title h1{
   transition: font-size ease 1s;
@@ -63,8 +63,9 @@ span.tag{
   line-height: 1.6;
 }
 span.tag.orange{
-  background: VAR(--PRIMARY);
+  background: VAR(--LIGHT);
   color: VAR(--DARK);
+  opacity: 0.6;
 }
 span.tag.dark{
   color: VAR(--LIGHT);
@@ -75,11 +76,14 @@ span.tag.dark{
 
 .card-outer {
   padding: 0.5rem;
-  background: VAR(--PRIMARY-GRADIENT);
+  background: VAR(--DARK);
   display: flex;
   flex-direction: column;
   border-radius: 1rem;
   transition: transform 300ms ease, box-shadow 300ms ease;
+}
+.card-outer.highlighted{
+  background: VAR(--PRIMARY-GRADIENT);
 }
 a.card-outer{
   text-decoration: none;
