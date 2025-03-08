@@ -8,19 +8,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v2.2.2
-        with:
-          version: 8
-      - name: Setup Node
-        uses: actions/setup-node@v3
-        with:
-          node-version: "20"
-          cache: pnpm
-          cache-dependency-path: 'pnpm-lock.yaml'
+      - uses: oven-sh/setup-bun@v2
       - name: Install dependencies
-        run: pnpm install
-      - name: Build client with Vite
-        run: pnpm run build >> $GITHUB_STEP_SUMMARY
+        run: bun install
+      - name: Build client with Bun
+        run: bun run build >> $GITHUB_STEP_SUMMARY
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1.0.4
         with:
@@ -38,4 +30,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1.2.0
+        uses: actions/deploy-pages@v4
