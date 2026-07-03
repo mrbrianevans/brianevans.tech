@@ -1,10 +1,14 @@
 {
   "name": "brianevans-tech",
-  "private": true,
   "version": "0.0.0",
+  "private": true,
   "type": "module",
   "scripts": {
     "dev": "bun index.html",
-    "build": "bun build ./index.html --outdir=dist"
+    "build": "bun build ./index.html --outdir=dist",
+    "format": "oxfmt"
+  },
+  "devDependencies": {
+    "oxfmt": "^0.57.0"
   }
 }

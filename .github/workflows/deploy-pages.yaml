@@ -1,6 +1,8 @@
-name: 'Deploy site to GitHub pages'
+name: "Deploy site to GitHub pages"
 on:
   push:
+    branches:
+      - master
 
 jobs:
   build-pages:
@@ -14,9 +16,9 @@ jobs:
       - name: Build client with Bun
         run: bun run build >> $GITHUB_STEP_SUMMARY
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1.0.4
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: 'dist'
+          path: "dist"
   deploy:
     needs: build-pages
     permissions:

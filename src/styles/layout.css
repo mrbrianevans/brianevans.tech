@@ -1,36 +1,34 @@
-@media screen and (min-width: 50rem){
-  main{
+@media screen and (min-width: 50rem) {
+  main {
     margin: 1rem CALC(0.3 * (100% - 50rem));
   }
 }
 
-article.grid{
+article.grid {
   display: grid;
   gap: 1rem;
   grid-template-rows: repeat(auto-fill, 12rem);
 }
-article.grid>*{
-  box-shadow: 0 0 0.5rem rgba(0,0,0,0.2);
+article.grid > * {
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
 }
-@media screen and (min-width: 26rem){
-  article.grid{
+@media screen and (min-width: 26rem) {
+  article.grid {
     grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
   }
-
 }
-@media screen and (max-width: 26rem){
-  article.grid{
+@media screen and (max-width: 26rem) {
+  article.grid {
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   }
 }
-@media screen and (min-width: 40em){
+@media screen and (min-width: 40em) {
   #page-title {
     grid-column: 1 / 3;
     grid-row: 1 / 3;
   }
-
 }
-@media screen and (max-width: 40em){
+@media screen and (max-width: 40em) {
   #page-title {
     grid-row: 1 / 4;
   }
