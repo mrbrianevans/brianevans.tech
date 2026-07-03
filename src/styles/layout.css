@@ -12,6 +12,9 @@ article.grid {
 article.grid > * {
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
 }
+.full-width {
+  grid-column: 1 / -1;
+}
 @media screen and (min-width: 26rem) {
   article.grid {
     grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));

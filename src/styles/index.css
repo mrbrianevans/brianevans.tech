@@ -11,10 +11,6 @@
   }
 }
 
-#full-project-directory {
-  grid-column: 1 / -1;
-}
-
 #profile {
   box-shadow: none;
   border-radius: 50%;
